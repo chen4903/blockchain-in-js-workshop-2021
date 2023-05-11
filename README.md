@@ -2,15 +2,17 @@
 
 ## 小组成员
 
-- 2021xxxx-姓名 （组长）
-- 2021xxxx-姓名
-- 2021xxxx-姓名
-- 2021xxxx-姓名
+- 2021131094 陈钦(组长)
+- 2021131095 李鑫
+- 2021131092 彭敏
+- 2021131107 徐诚杰
+- 2021131105 彭郅崴
+- 2021131121 徐烜
 
 
 ## 代码仓库链接
 
-https://github.com/caosbad/blockchain-in-js-workshop-2021(示例用，请根据自身的仓库替换)
+https://github.com/chen4903/blockchain-in-js-workshop-2021
 
 
 
@@ -19,7 +21,6 @@ https://github.com/caosbad/blockchain-in-js-workshop-2021(示例用，请根据�
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
 
 
 ### 代码截图
