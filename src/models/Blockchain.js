@@ -1,4 +1,3 @@
-// Blockchain
 class Blockchain {
   // 1. 完成构造函数及其参数
   /* 构造函数需要包含 
@@ -17,69 +16,6 @@ class Blockchain {
   // 2. 定义 longestChain 函数
   /* 
     返回当前链中最长的区块信息列表
-  */
-
-  
-  /*
-  longestChain1() {
-    var blockValues = Object.values(this.blocks);
-    var len = blockValues.length // 记录数组中区块的个数
-    if(len > blockValues[len-1].num){ // 如果发生分叉
-      if(this.bifurcation != blockValues[len-1].num && this.bifurcation != 0){ //分叉之后，又来了一个区块，然后最长链形成
-        var temp = Object.values(this.blocks);
-        var result = Object.values(this.blocks);
-        result.pop()
-        result.pop()
-        result.pop()
-        if(temp[len-3].hash == temp[len-1].preHash){
-          result.push(blockValues[len-3])
-          result.push(blockValues[len-1])
-          blockValues = result
-          this.blocks = blockValues
-          return blockValues
-        }else{
-          result.push(blockValues[len-2])
-          result.push(blockValues[len-1])
-          blockValues = result
-          this.blocks = blockValues
-          return blockValues
-        }
-      }
-        // 发生了分叉，暂时不删除元素，先选其一返回数组
-        this.bifurcation = blockValues[len-1].num
-        var temp = blockValues
-        temp.pop()
-        return temp
-    }
-    return blockValues
-  }
-  */
-
-  /*
-  longestChain2(){
-
-    var blockValues = Object.values(this.blocks);
-    var len = blockValues.length // 记录数组中区块的个数
-    var result = []
-    var number = 0 // 用于记录result中的序号
-    for (let index = len; index > 0; index--) {
-      if(result.length != 0 && blockValues[index-1].num == result[number].num){ //如果处于分叉
-        this.bifurcation = 1
-        continue
-      }
-      if(result.length != 0 && blockValues[index-1].hash == result[number].preHash ){
-        number++
-        result.push(blockValues[index-1])
-      }else{
-        if(index == len){
-          result.push(blockValues[index-1])
-        }
-        continue
-      }
-    }
-
-    return result.reverse()
-  }
   */
 
   longestChain() {

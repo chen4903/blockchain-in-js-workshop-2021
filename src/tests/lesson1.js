@@ -1,17 +1,6 @@
 import Block from '../models/Block.js'
 import Blockchain from '../models/Blockchain.js'
 import sha256 from 'crypto-js/sha256.js'
-
-/*
-  说明：
-    程序执行不稳定，有时候可以正确执行不报错，有时候会报错，
-    在Blockchain.js中的longestChain()方法写了3个，1和2：
-    其一是删除了除最长链的元素，其一是从所有链中返回最长链。
-    但是都是不稳定，如果执行不成功，重复执行，成功执行与失败执行的概率为3:7。
-    第三个longestChain()是最终的版本，可以稳定运行，但是由于电脑的配置环境等原因，有时候会报出环境错误
- */
-
-
 const main = () => {
   // 初始化区块链
   let blockchain = new Blockchain('BitCoin')
