@@ -37,11 +37,7 @@ https://www.aliyundrive.com/s/Vi9BU1aLh2v
 6. 比特币的最长链是“大多数人”决定的，每一个区块都必须引用上一个区块，因此最长链是最难被推翻和篡改的
 
 
-
-
 ---
-
-
 
 ## 第二课代码
 
@@ -53,7 +49,7 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson2
 
 ### 代码截图
 1. 运行结果：https://moe.photo/images/2023/05/17/QQ20230517215514.png。
-2. BlockJS： https://moe.photo/images/2023/05/17/Block1.png  和  https://moe.photo/images/2023/05/17/block2.png。
+2. BlockJS： https://moe.photo/images/2023/05/17/aaa.png
 3. BlockchainJS： https://moe.photo/images/2023/05/17/Blockchain.png。
 
 
