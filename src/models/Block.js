@@ -16,8 +16,9 @@ class Block {
     const prefix = "0".repeat(DIFFICULTY);
     if(this.hash.substring(0, DIFFICULTY) === prefix){
       console.log("blockHash:",this.hash)
+      return true
     }
-    return this.hash.substring(0, DIFFICULTY) === prefix;
+    return false
   }
 
   setNonce(_time) {
