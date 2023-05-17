@@ -48,9 +48,7 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson2
 
 
 ### 代码截图
-1. 运行结果：https://moe.photo/images/2023/05/17/QQ20230517215514.png。
-2. BlockJS： https://moe.photo/images/2023/05/17/aaa.png
-3. BlockchainJS： https://moe.photo/images/2023/05/17/Blockchain.png。
+https://www.aliyundrive.com/s/dUdCDxetF7s
 
 
 ### 主观与讨论题内容
