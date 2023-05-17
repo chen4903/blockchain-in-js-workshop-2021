@@ -52,16 +52,18 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson2
 
 
 ### 代码截图
-运行结果：https://moe.photo/images/2023/05/17/1.png 和  https://moe.photo/images/2023/05/17/2.png
-BlockJS： https://moe.photo/images/2023/05/17/Block1.png  和  https://moe.photo/images/2023/05/17/block2.png
-BlockchainJS： https://moe.photo/images/2023/05/17/Blockchain.png
+1. 运行结果：https://moe.photo/images/2023/05/17/QQ20230517215514.png。
+2. BlockJS： https://moe.photo/images/2023/05/17/Block1.png  和  https://moe.photo/images/2023/05/17/block2.png。
+3. BlockchainJS： https://moe.photo/images/2023/05/17/Blockchain.png。
 
 
 ### 主观与讨论题内容
-1. 运行结果经常出现内存溢出的问题，代码逻辑是对的，但是就是很难跑通过，估计是Javascript的内存限制
+1. 运行结果经常出现内存溢出的问题，代码逻辑是对的，但是有时候跑不通过，估计是Javascript的内存限制
 2. 讨论了本次实验的两种情况：一个是找到符合条件的hash值(hash值的前n个位是0)，一个是找到符合条件的nonce值(nonce值的前n个位是0)
-3. 如果是nonce值的版本就容易跑通过测试，而hash值的版本就很难跑通过测试，两者都是修改类中的一个属性值，但是其中一者就非常容易造成内存溢出，很奇怪，没搞懂
-4. 按照区块链的逻辑，应该是hash值满足前n位是0才符合条件，而nonce随机数只是为了修改hash值，我们最终选择找到满足条件的hash值版本
+3. 按照区块链的逻辑，应该是hash值满足前n位是0才符合条件，而nonce随机数只是为了修改hash值，我们最终选择找到满足条件的hash值版本
+4. 最终找到解决方案：在时间戳当中加上随机数，然后进行sha256，这样在一秒钟的当中结果就都不是一样的，这样内存溢出的情况大大减少
+5. 加分项如图：https://moe.photo/images/2023/05/17/QQ20230517220744.png
+
 
 
 ---
