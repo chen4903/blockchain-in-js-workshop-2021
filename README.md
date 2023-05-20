@@ -68,19 +68,19 @@ https://www.aliyundrive.com/s/dUdCDxetF7s
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
+https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson3
 
 
 ### 代码截图
 
-> 将截图上传至网盘，放入链接即可
-
-![](链接)
-
+百度网盘分享：https://pan.baidu.com/s/1ADKHCNkXThtmPkq4wYMBzA。密码：1234
 
 ### 主观与讨论题内容
 
-
+1. UTXO模型的设计，输入和输出，是否需要总和来统计每一个UTXO的剩余
+2. lesson3.js的测试代码有一些错误和遗漏，经过讨论进行了修改
+3. 程序跑起来，有时候无法执行成功(报错)，可能是JS引擎的问题，lesson3执行成功的概率在50%左右，试多几次就跑出来了
+4. UTXO的输入输出是如何继承上一个区块中所有的数据的
 
 ---
 
