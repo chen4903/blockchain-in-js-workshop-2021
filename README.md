@@ -102,7 +102,8 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson4
 
 ### 主观与讨论题内容
 
-1. 本次实验比较简单，只讨论了UTXO的数据处理
+1. 本次实验比较简单，讨论了UTXO的数据处理
+2. 讨论了区块链中UTXO如何进行设计
 
 ---
 
@@ -114,18 +115,20 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commits/lesson4
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
+https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/a46a2c178f216cc0de3585d9e928d2c533d0ef04
 
 
 ### 代码截图
 
-> 将截图上传至网盘，放入链接即可
-
-![](链接)
-
+1. 百度云盘：https://pan.baidu.com/s/1w0_SBNe48ONYuB-SRLg-mw。密码：1234
+2. 加分项： 百度云盘 https://pan.baidu.com/s/1Bg8zYrX-amS6Svyg6nGyKw。密码：1234
 
 ### 主观与讨论题内容
 
+1. 尝试思考⽐特币交易的处理极限
+2. 思考⽐特币的区块⼤⼩与⽐特币挖矿难度的关系
+3. 探讨失败的交易是否上链，最终的讨论结果是：失败的交易也上链，但是数据无效，只会更新hash值
+4. 讨论了如何记录失败的transaction：最终讨论结果是用一个UTXO["failTx"]来记录，每次失败的交易都会更新此数据
 
 
 ---
