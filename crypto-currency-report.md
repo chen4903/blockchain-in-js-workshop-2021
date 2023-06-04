@@ -64,18 +64,19 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/e29ceea7c939eb
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
+https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/f6254390f62df38700de6b71a8dbc792472f11be
 
 
 ### 代码截图
 
-> 将截图上传至网盘，放入链接即可
-
-![](链接)
+百度网盘：https://pan.baidu.com/s/1-SS4ZidTDRQ1q5xSL6QlIw。密码：1234
 
 
 ### 主观与讨论题内容
 
-
+1. 讨论了MPT树的结构设计，数组和链表结合，递归等
+2. 讨论了基于字典树, 以太坊做了改良：MPT树使得遍历、插入、验证数据更加容易，高效
+3. MPT 想要解决的核⼼问题是什么：上传、验证数据的高效性
+4. 由于实际的MPT树的设计很复杂，本次实验只做最简版的，没有考虑用raw编码和hp编码，前缀prefix，nibble等没有考虑，只将最核心的部分做了实现
 
 ---
