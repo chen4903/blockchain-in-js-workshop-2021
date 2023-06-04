@@ -1,0 +1,126 @@
+const branchNodeValue = {"0": {"node":null,"hash":""}, "1": {"node":null,"hash":""}, "2": {"node":null,"hash":""}, "3": {"node":null,"hash":""},
+                        "4": {"node":null,"hash":""}, "5": {"node":null,"hash":""},"6": {"node":null,"hash":""}, "7": {"node":null,"hash":""},
+                        "8": {"node":null,"hash":""}, "9": {"node":null,"hash":""}, "a": {"node":null,"hash":""}, "b": {"node":null,"hash":""},
+                        "c": {"node":null,"hash":""}, "d": {"node":null,"hash":""}, "e": {"node":null,"hash":""}, "f": {"node":null,"hash":""}}
+
+class ExtensionNode{
+    constructor(){
+        //this.prefix = 0 ,简化版，暂时不考虑prefix
+        this.sharedNibbles = ""
+        this.nextNode = {"node":null,"hash":""}
+        this.preNode=null
+    }
+}
+
+class BranchNode{
+    constructor(){
+        this.value = branchNodeValue
+        this.preNode=null
+    }
+}
+
+class LeafNode{
+    constructor() {
+        //this.prefix = 0 ,简化版，暂时不考虑prefix
+        this.keyEnd = 0
+        this.value = 0
+        this.preNode=null
+    }
+}
+
+const address01 = ["a711355",45.0]
+const address02 = ["a77d337",1.0]
+const address03 = ["a7f9365",1.1]
+const address04 = ["a77d397",0.12]
+
+var RootExtensionNode = new ExtensionNode()
+
+const inputArr = [address01,address02,address03,address04]
+
+// 功能：增加，更新，验证
+// 1. 如何构建？
+//    采用递归的方式，ExtensionNode, BranchNode,LeafNode组成一个方法，然后递归
+
+function createTree(arr){
+    // 1.确定shared nibbles(s)
+    var circle = true
+    var row = 0
+    for (let i = 0; i < arr[0][0].length; i++) {
+        var verify = arr[0][i]
+        for (let j = 0; j < arr.length; j++) {
+            if(verify != arr[j][i]){
+                circle = false
+                break
+            }
+        }
+        // 一轮结束，具有相同前缀
+        if(circle==true){
+            RootExtensionNode.sharedNibbles += verify
+        }else {
+            row = i
+            break
+        }
+    }
+    // 2.处理next node
+    // 2.1 打竖来看，拼接得到Branch Node中的数值
+    var branchnode = new BranchNode()
+    var BranchNodeString = ""
+    for (let i = 0; i < arr[0][0].length; i++) {
+        console.log(arr)
+        BranchNodeString += arr[i][0][row]
+    }// 假如我们得到的是17f7
+    var countBranchNodeString = {}
+    // 先将集合初始化
+    for (let i = 0; i < BranchNodeString.length; i++) {
+        countBranchNodeString[BranchNodeString[i]] = 0
+    }
+    // 计数
+    for (let i = 0; i < temp.length; i++) {
+        countBranchNodeString[BranchNodeString[i]]++
+    }
+    // 第三层
+    var position = []
+    for (let i = 0; i < BranchNodeString.length; i++) { // 是Leaf Node
+        if (countBranchNodeString[BranchNodeString[i]] == 1){ // 如果是Leaf Node
+            var leafNode = new LeafNode()
+            var leafNodeKeyEnd = ""
+            for (let j = row; j < arr[0][0].length - row - 1; j++) {
+                leafNodeKeyEnd += arr[i][0][j+1]
+            }
+            leafNode.keyEnd = leafNodeKeyEnd
+            leafNode.value = arr[i][1]
+            branchnode.value[BranchNodeString[i]]["node"] = leafNode
+        }else{ //不是Leaf Node，则记录位置，等下递归
+            position.push(i)
+        }
+    }
+    // 3.递归
+    // 3.1 先复制数组
+    var newArr = []
+    for (let i = 0; i < position.length; i++) {
+        let str = arr[position[i]][0].substring(row)
+        let temp = []
+        temp.push(str)
+        temp.push(arr[position[i]][1])
+        newArr.push(temp)
+    }
+    // 3.2 开始递归
+    if(position.length != 0){
+        createTree(newArr)
+    }else {
+
+    }
+}
+
+// 2.如何设置hash值？
+//    必须自下而上来计算hash值
+
+createTree(inputArr)
+
+
+
+
+
+
+
+
