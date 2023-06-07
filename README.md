@@ -141,19 +141,19 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/a46a2c178f216c
 
 ### 代码 commint 地址
 
-https://github.com/CUITBlockchain/blockchain-in-js-workshop-2021/commit/25f3a0d83a9fff2b4514c5503f470df939d0c2af
+https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/2c18f05fd6863bc172e16ac0b9d3631f514ea3a3
 
 
 ### 代码截图
 
-> 将截图上传至网盘，放入链接即可
-
-![](图片链接放这里)
+百度云盘：https://pan.baidu.com/s/1qGxIt9yccbKxwSRIpPIqjg。密码：1234
 
 
 ### 主观与讨论题内容
 
-
+1. 讨论思考什么样的交易费⽤是合理的：我们觉得交易的手续费应该是占此次交易的某个百分比比较合适
+2. 如果去掉交易费⽤⽐特币⽹络会发⽣什么：那么当2100万个比特币被挖出来之后，矿工就没有了代币激励，就不挖矿了，如果还有手续费，他们还会继续工作
+3. 还讨论了新增了fee之后，计算hash的时候应该如何改变，并且新增了fee，之前的代码会有些变动，应该如何修改
 
 ---
 
