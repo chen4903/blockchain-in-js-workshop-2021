@@ -161,6 +161,18 @@ https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/2c18f05fd6863b
 ## 结课报告
 
 
+### 代码 commint 地址
+
+https://github.com/chen4903/blockchain-in-js-workshop-2021/commit/19be4708b5c4a5c7db482f9e4584e1334297e157
 
 
+### 代码截图
 
+百度云盘：https://pan.baidu.com/s/1b4Kv8mYpHl8Gog62nZMSXg。密码：1234
+
+
+1. 此次教程挺有意思的，一步一步构建区块链系统，从lesson1到final，一共7次，用JavaScript。
+2. 实现了比特币区块链系统的整体框架与运行逻辑，具体细节没有考虑到位
+3. 另外的三个理论课附带是实验课是：默克尔树，字典树，以太坊世界状态树，其实就是用JavaScript来实现这些数据结构，其中以太坊世界状态树比较难
+4. 2023/06/10 记
+5. 以上
